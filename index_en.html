@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruby Kiwi: The next-generation premium AI device powered by the Nano Banana chip.">
+    <title>Ruby Kiwi: The Future of AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Visual Overlays -->
+    <div class="noise"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
+        <div class="logo">
+            <div class="logo-icon">
+                RK
+            </div>
+            <span class="logo-text">RUBY KIWI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#story" class="nav-link">Product Story</a>
+            <a href="#features" class="nav-link">Nano Banana</a>
+            <a href="#showcase" class="nav-link">Showcase</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <a href="index.html" class="lang-toggle">KOR</a>
+            <button class="btn-launch">Pre-order</button>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#story" class="mobile-nav-link">Product Story</a>
+        <a href="#features" class="mobile-nav-link">Nano Banana</a>
+        <a href="#showcase" class="mobile-nav-link">Showcase</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="index.html" class="mobile-nav-link lang-mobile">한국어로 보기</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-bg">
+            <img src="assets/ruby_kiwi_hero.png" alt="Ruby Kiwi Hero">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Next Generation AI</div>
+            <h1 class="hero-title">RUBY KIWI</h1>
+            <p class="hero-subtitle">Art Beyond Intelligence, Tech Beyond Limits</p>
+        </div>
+    </header>
+
+    <!-- Product Story Section -->
+    <section id="story">
+        <div class="glass-card spotlight-card reveal">
+            <div class="spotlight-info">
+                <span class="badge-text">Product Story</span>
+                <h2 class="spotlight-title">The Pinnacle of Intelligence</h2>
+                <p class="spotlight-desc">Ruby Kiwi is more than just a device; it is your companion. Exquisitely designed AI algorithms combined with stunning aesthetics radically transform every moment of your daily life.</p>
+                <div class="btn-group">
+                    <button class="btn-primary">View Design</button>
+                    <button class="btn-secondary">Watch Video</button>
+                </div>
+            </div>
+            <div class="spotlight-media">
+                <img src="assets/ruby_kiwi_design.png" alt="Ruby Kiwi Design" class="spotlight-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Nano Banana) -->
+    <section id="features">
+        <h2 class="section-heading reveal">Powered by Nano Banana</h2>
+        <div class="tabs-container reveal">
+            <button class="tab-btn active" data-tab="performance">Performance</button>
+            <button class="tab-btn" data-tab="efficiency">Efficiency</button>
+            <button class="tab-btn" data-tab="security">Security</button>
+        </div>
+
+        <div id="feature-grid" class="artist-grid">
+            <div class="glass-card reveal" data-category="performance">
+                <div class="artist-placeholder" style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;"></div>
+                <h4 class="artist-name">Overwhelming Compute</h4>
+                <p class="artist-desc">Equipped with the Nano Banana NPU performing 100 trillion operations per second.</p>
+            </div>
+            <div class="glass-card reveal" data-category="efficiency">
+                <div class="artist-placeholder" style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;"></div>
+                <h4 class="artist-name">Extreme Power Efficiency</h4>
+                <p class="artist-desc">50% improved battery life and advanced thermal management technology.</p>
+            </div>
+            <div class="glass-card reveal" data-category="security">
+                <div class="artist-placeholder" style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;"></div>
+                <h4 class="artist-name">Standalone Biometrics</h4>
+                <p class="artist-desc">Flawless on-device security processing without external server connections.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase">
+        <h2 class="section-heading reveal">Visual Showcase</h2>
+        <div class="showcase-grid">
+            <div class="showcase-item reveal">
+                <img src="assets/ruby_kiwi_hero.png" alt="Ecosystem" class="showcase-img">
+                <div class="showcase-overlay">
+                    <h3 class="showcase-title">Hyper-Connected</h3>
+                    <p class="showcase-tag">Seamless Connection</p>
+                </div>
+            </div>
+            <div class="showcase-item reveal">
+                <img src="assets/ruby_kiwi_design.png" alt="Design" class="showcase-img">
+                <div class="showcase-overlay">
+                    <h3 class="showcase-title">Aesthetic Minimalism</h3>
+                    <p class="showcase-tag">Future Aesthetic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="newsletter-card reveal">
+            <h2 class="newsletter-title">Waitlist</h2>
+            <p class="newsletter-desc">Don't miss the chance to be the first to experience Ruby Kiwi.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('You have been added to the waitlist.');">
+                <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">RK</div>
+                    <span class="logo-text">RUBY KIWI</span>
+                </div>
+                <p>The pinnacle of AI technology, a global premium smart device brand powered by the Nano Banana chip.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Explore</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#story">Story</a></li>
+                    <li class="footer-link"><a href="#features">Technology</a></li>
+                    <li class="footer-link"><a href="#showcase">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">FAQ</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Ruby Kiwi AI Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

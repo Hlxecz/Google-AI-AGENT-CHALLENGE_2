@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruby Kiwi: Nano Banana 칩이 탑재된 차세대 프리미엄 AI 디바이스.">
+    <title>Ruby Kiwi: The Future of AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Visual Overlays -->
+    <div class="noise"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
+        <div class="logo">
+            <div class="logo-icon">
+                RK
+            </div>
+            <span class="logo-text">RUBY KIWI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#story" class="nav-link">Product Story</a>
+            <a href="#features" class="nav-link">Nano Banana</a>
+            <a href="#showcase" class="nav-link">Showcase</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <a href="index_en.html" class="lang-toggle">ENG</a>
+            <button class="btn-launch">Pre-order</button>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#story" class="mobile-nav-link">Product Story</a>
+        <a href="#features" class="mobile-nav-link">Nano Banana</a>
+        <a href="#showcase" class="mobile-nav-link">Showcase</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="index_en.html" class="mobile-nav-link lang-mobile">Switch to English</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-bg">
+            <img src="assets/ruby_kiwi_hero.png" alt="Ruby Kiwi Hero">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Next Generation AI</div>
+            <h1 class="hero-title">RUBY KIWI</h1>
+            <p class="hero-subtitle">지능을 넘어선 예술, 한계를 넘어선 기술</p>
+        </div>
+    </header>
+
+    <!-- Product Story Section -->
+    <section id="story">
+        <div class="glass-card spotlight-card reveal">
+            <div class="spotlight-info">
+                <span class="badge-text">Product Story</span>
+                <h2 class="spotlight-title">지능의 결정체</h2>
+                <p class="spotlight-desc">Ruby Kiwi는 단순한 기기를 넘어선 당신의 동반자입니다. 정교하게 설계된 AI 알고리즘과 아름다운 디자인이 결합되어, 일상의 모든
+                    순간을 혁신적으로 변화시킵니다.</p>
+                <div class="btn-group">
+                    <button class="btn-primary">디자인 보기</button>
+                    <button class="btn-secondary">소개 영상</button>
+                </div>
+            </div>
+            <div class="spotlight-media">
+                <img src="assets/ruby_kiwi_design.png" alt="Ruby Kiwi Design" class="spotlight-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Nano Banana) -->
+    <section id="features">
+        <h2 class="section-heading reveal">Powered by Nano Banana</h2>
+        <div class="tabs-container reveal">
+            <button class="tab-btn active" data-tab="performance">성능</button>
+            <button class="tab-btn" data-tab="efficiency">효율성</button>
+            <button class="tab-btn" data-tab="security">보안</button>
+        </div>
+
+        <div id="feature-grid" class="artist-grid">
+            <div class="glass-card reveal" data-category="performance">
+                <div class="artist-placeholder"
+                    style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;">
+                </div>
+                <h4 class="artist-name">압도적인 연산 능력</h4>
+                <p class="artist-desc">초당 100조 번의 연산을 수행하는 Nano Banana NPU 탑재</p>
+            </div>
+            <div class="glass-card reveal" data-category="efficiency">
+                <div class="artist-placeholder"
+                    style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;">
+                </div>
+                <h4 class="artist-name">극강의 전력 효율</h4>
+                <p class="artist-desc">기존 대비 50% 향상된 배터리 수명과 발열 제어 기술</p>
+            </div>
+            <div class="glass-card reveal" data-category="security">
+                <div class="artist-placeholder"
+                    style="background-image: url('assets/nano_banana.png'); background-size: cover; background-position: center;">
+                </div>
+                <h4 class="artist-name">독립형 생체 보안</h4>
+                <p class="artist-desc">외부 서버 연결 없이 기기 내에서 처리되는 완벽한 보안 시스템</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase">
+        <h2 class="section-heading reveal">Visual Showcase</h2>
+        <div class="showcase-grid">
+            <div class="showcase-item reveal">
+                <img src="assets/ruby_kiwi_hero.png" alt="Ecosystem" class="showcase-img">
+                <div class="showcase-overlay">
+                    <h3 class="showcase-title">초연결 생태계</h3>
+                    <p class="showcase-tag">Seamless Connection</p>
+                </div>
+            </div>
+            <div class="showcase-item reveal">
+                <img src="assets/ruby_kiwi_design.png" alt="Design" class="showcase-img">
+                <div class="showcase-overlay">
+                    <h3 class="showcase-title">미니멀리즘의 미학</h3>
+                    <p class="showcase-tag">Future Aesthetic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="newsletter-card reveal">
+            <h2 class="newsletter-title">사전예약 대기명단</h2>
+            <p class="newsletter-desc">가장 먼저 Ruby Kiwi를 경험할 수 있는 기회를 놓치지 마세요.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('예약되었습니다.');">
+                <input type="email" placeholder="이메일 주소를 입력하세요" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">예약하기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">RK</div>
+                    <span class="logo-text">RUBY KIWI</span>
+                </div>
+                <p>AI 기술의 정점, Nano Banana 칩이 탑재된 글로벌 프리미엄 스마트 디바이스 브랜드입니다.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Explore</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#story">Story</a></li>
+                    <li class="footer-link"><a href="#features">Technology</a></li>
+                    <li class="footer-link"><a href="#showcase">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">FAQ</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Ruby Kiwi AI Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
