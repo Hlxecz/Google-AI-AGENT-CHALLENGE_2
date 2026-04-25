@@ -2,11 +2,11 @@
 
 :root {
     /* Color Palette */
-    --navy-950: #020617;
-    --navy-900: #0f172a;
-    --electric: #00d2ff;
-    --cyan: #00f2ff;
-    --magenta: #ff007a;
+    --black-950: #050000;
+    --black-900: #1a0505;
+    --ruby-red: #ff2a2a;
+    --crimson: #d10024;
+    --magenta: #8a0000;
     --white: #ffffff;
     --slate-400: #94a3b8;
     --slate-500: #64748b;
@@ -16,7 +16,7 @@
     --glass-bg: rgba(255, 255, 255, 0.08);
     --glass-bg-hover: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.15);
-    --glass-border-hover: rgba(0, 210, 255, 0.6);
+    --glass-border-hover: rgba(255, 42, 42, 0.6);
     --glass-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.6);
     --glass-blur: blur(40px);
     
@@ -38,12 +38,12 @@ html {
 }
 
 body {
-    background-color: var(--navy-950);
+    background-color: var(--black-950);
     color: var(--white);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    selection-background-color: rgba(0, 210, 255, 0.3);
+    selection-background-color: rgba(255, 42, 42, 0.3);
 }
 
 /* Background Elements */
@@ -75,7 +75,7 @@ body {
 .blob-1 {
     width: 800px;
     height: 800px;
-    background: rgba(0, 210, 255, 0.1);
+    background: rgba(255, 42, 42, 0.1);
     top: -10%;
     left: -10%;
 }
@@ -83,7 +83,7 @@ body {
 .blob-2 {
     width: 600px;
     height: 600px;
-    background: rgba(255, 0, 122, 0.05);
+    background: rgba(138, 0, 0, 0.05);
     top: 30%;
     right: -10%;
     animation-delay: 1s;
@@ -92,7 +92,7 @@ body {
 .blob-3 {
     width: 700px;
     height: 700px;
-    background: rgba(0, 242, 255, 0.05);
+    background: rgba(209, 0, 36, 0.05);
     bottom: -10%;
     left: 20%;
     animation-delay: 2s;
@@ -127,7 +127,7 @@ nav {
 
 nav.scrolled {
     padding: 1rem 4rem;
-    background: rgba(2, 6, 23, 0.85);
+    background: rgba(5, 0, 0, 0.85);
 }
 
 .logo {
@@ -139,7 +139,7 @@ nav.scrolled {
 .logo-icon {
     width: 2.5rem;
     height: 2.5rem;
-    background: linear-gradient(135deg, var(--electric), var(--magenta));
+    background: linear-gradient(135deg, var(--ruby-red), var(--magenta));
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -200,7 +200,7 @@ nav.scrolled {
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--electric);
+    background: var(--ruby-red);
     transition: var(--transition-fast);
 }
 
@@ -236,7 +236,7 @@ nav.scrolled {
 
 .lang-toggle:hover {
     background: var(--white);
-    color: var(--navy-950);
+    color: var(--black-950);
 }
 
 .btn-launch {
@@ -281,7 +281,7 @@ nav.scrolled {
 .mobile-menu {
     position: fixed;
     inset: 0;
-    background: rgba(2, 6, 23, 0.95);
+    background: rgba(5, 0, 0, 0.95);
     backdrop-filter: blur(30px);
     z-index: 140;
     display: flex;
@@ -309,16 +309,16 @@ nav.scrolled {
 
 .lang-mobile {
     font-size: 1.2rem !important;
-    color: var(--electric) !important;
-    border: 1px solid var(--electric);
+    color: var(--ruby-red) !important;
+    border: 1px solid var(--ruby-red);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     margin-top: 1rem;
 }
 
 .btn-launch:hover {
-    border-color: var(--electric);
-    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    border-color: var(--ruby-red);
+    box-shadow: 0 0 20px rgba(255, 42, 42, 0.2);
 }
 
 /* Hero Section */
@@ -348,7 +348,7 @@ header#hero {
 .hero-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(2, 6, 23, 0.2), rgba(2, 6, 23, 0.4), var(--navy-950));
+    background: linear-gradient(to bottom, rgba(5, 0, 0, 0.2), rgba(5, 0, 0, 0.4), var(--black-950));
 }
 
 .hero-content {
@@ -363,7 +363,7 @@ header#hero {
     border-radius: 9999px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    color: var(--electric);
+    color: var(--ruby-red);
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.4em;
@@ -382,10 +382,10 @@ header#hero {
     font-weight: 900;
     line-height: 1;
     letter-spacing: -0.05em;
-    background: linear-gradient(to bottom, var(--white), var(--electric), var(--cyan));
+    background: linear-gradient(to bottom, var(--white), var(--ruby-red), var(--crimson));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 50px rgba(0, 210, 255, 0.4));
+    filter: drop-shadow(0 0 50px rgba(255, 42, 42, 0.4));
     animation: float 5s ease-in-out infinite;
 }
 
@@ -474,7 +474,7 @@ section {
     right: -5rem;
     width: 20rem;
     height: 20rem;
-    background: rgba(0, 210, 255, 0.1);
+    background: rgba(255, 42, 42, 0.1);
     border-radius: 50%;
     filter: blur(60px);
 }
@@ -486,7 +486,7 @@ section {
 }
 
 .badge-text {
-    color: var(--electric);
+    color: var(--ruby-red);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -518,7 +518,7 @@ section {
     padding: 1rem 2.5rem;
     border-radius: 9999px;
     background: var(--white);
-    color: var(--navy-950);
+    color: var(--black-950);
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -588,10 +588,10 @@ section {
 }
 
 .tab-btn.active {
-    background: var(--electric);
-    color: var(--navy-950);
-    border-color: var(--electric);
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.4);
+    background: var(--ruby-red);
+    color: var(--black-950);
+    border-color: var(--ruby-red);
+    box-shadow: 0 0 25px rgba(255, 42, 42, 0.4);
 }
 
 .artist-grid {
@@ -602,7 +602,7 @@ section {
 
 .artist-placeholder {
     height: 12rem;
-    background: var(--navy-900);
+    background: var(--black-900);
     border-radius: 1.5rem;
     margin-bottom: 1.5rem;
     position: relative;
@@ -613,7 +613,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 210, 255, 0.1), rgba(255, 0, 122, 0.1));
+    background: linear-gradient(135deg, rgba(255, 42, 42, 0.1), rgba(138, 0, 0, 0.1));
     animation: placeholder-pulse 3s infinite alternate;
 }
 
@@ -663,7 +663,7 @@ section {
 .showcase-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, var(--navy-950), rgba(2, 6, 23, 0.2), transparent);
+    background: linear-gradient(to top, var(--black-950), rgba(5, 0, 0, 0.2), transparent);
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -678,7 +678,7 @@ section {
 }
 
 .showcase-tag {
-    color: var(--electric);
+    color: var(--ruby-red);
     font-size: 1.25rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -693,7 +693,7 @@ section {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
-    border-top: 1px solid rgba(0, 210, 255, 0.2);
+    border-top: 1px solid rgba(255, 42, 42, 0.2);
 }
 
 .newsletter-title {
@@ -722,7 +722,7 @@ section {
 
 .newsletter-input {
     flex: 1;
-    background: var(--navy-900);
+    background: var(--black-900);
     border: 1px solid var(--glass-border);
     border-radius: 9999px;
     padding: 1rem 2rem;
@@ -732,14 +732,14 @@ section {
 }
 
 .newsletter-input:focus {
-    border-color: var(--electric);
+    border-color: var(--ruby-red);
 }
 
 .newsletter-btn {
     padding: 1rem 3rem;
     border-radius: 9999px;
-    background: var(--electric);
-    color: var(--navy-950);
+    background: var(--ruby-red);
+    color: var(--black-950);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -749,7 +749,7 @@ section {
 }
 
 .newsletter-btn:hover {
-    box-shadow: 0 0 30px rgba(0, 210, 255, 0.6);
+    box-shadow: 0 0 30px rgba(255, 42, 42, 0.6);
 }
 
 /* Footer Styles */
@@ -779,7 +779,7 @@ footer {
 }
 
 .footer-heading {
-    color: var(--electric);
+    color: var(--ruby-red);
     font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.15em;
