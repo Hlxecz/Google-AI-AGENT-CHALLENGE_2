@@ -1,0 +1,2 @@
+우리 애플리케이션에 사용할 샘플 리뷰 데이터를 CSV 형태로 samples/review.csv 파일에 100개 만들어줘. 
+컬럼은 id, rating, title, content, author, date, helpful_votes, verified_purchase로 정해줘.

@@ -1,0 +1,28 @@
+[Task］ LangChain 기반 Pinecone 벡터 DB 연동을 구현해. 
+
+[현재상태］ 
+  - Pinecone API 키는 .env 파일의 PINECONE_API_KEY에 있어. 
+  - Pinecone Host .env 파일의 PINECONE_HOST에 있어. 
+  - Supabase 프로젝트 URL은 .env 파일의 NEXT_PUBLIC_SUPABASE_URL에 있어. 
+  - Supabase Key는 .env 파일의 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY에 있어. 
+  - 샘플 데이터: samples/review.csv （상품 리뷰） 
+
+[구현할 기능］ 
+  1. Pinecone 설정 
+    - LangChain 사용
+    - 인덱스명 "review-chatbot"
+    - 모델 llama-text-embed-v2 
+  2. 문서 처리 파이프라인
+    - LangChain 사용
+    - csv로 로드하고 파싱하기 
+  3. API 생성 
+    - 임베딩 및 업로드 API 
+    - 유사도 검색 API 
+  4. Next.js 연동 
+    - 현재 구현되어 있는 UI와 RAG 시스템 연동하기 
+    - "샘플 데이터 인덱싱"" 버튼 생성，클릭하면 샘플 데이터 인덱싱 진행
+  5. 수파베이스 연동 
+    - 필수 수파베이스 마이그레이션 생성 
+    - 프로젝트와 수파베이스 데이터베이스 완전히 연동 
+    - 인증 연동 불필요，로그인하지 않은 사용자도 사용할 수 있도록 설정
+  6. LLM은 아직 붙이지 않음

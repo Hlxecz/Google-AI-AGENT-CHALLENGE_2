@@ -1,0 +1,27 @@
+[Task]
+할 일 목록 앱의 핵심 기능에 대한 테스트를 TDD 방식으로 작성해줘.
+
+기능］
+1. addTodo: 새 할일 추가
+2. getTodos：전체 목록 조회
+3. toggleTodo: 완료 상태 토글
+4. deleteTodo: 할 일 삭제
+5. updateTodo: 할 일 수정
+
+［데이터 구조］
+interface Todo  { 
+	id: string;
+	title：string;
+	completed: boolean;
+	createdAt: Date;
+}
+
+[테스트 원칙］
+- 각 함수당 최소 3개의 테스트 케이스
+- 정상 케이스 + 엣지 케이스 포함
+- describe/it 구조 사용
+- 한글 테스트 설명
+
+기술 스택］
+- Next.js 최신버전 사용 (npx create-next-app@latest .) 실행
+- Shadcn 사용
